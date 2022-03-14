@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="12dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/recycler_car_image"
+            style="@style/imageStyle"
+            android:layout_height="250dp" />
+
+        <TextView
+            android:id="@+id/recycler_car_name"
+            style="@style/mainScreenStyle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recycler_car_price_mileage"
+            style="@style/mainScreenStyle" />
+
+        <TextView
+            android:id="@+id/recycler_car_location"
+            style="@style/mainScreenStyle" />
+
+        <LinearLayout
+            style="@style/baseDividerStyle"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_car_location" />
+
+
+        <Button
+            android:id="@+id/recycler_button_call_dealer"
+            style="@style/buttonStyle"
+            android:background="@android:color/transparent"
+            android:textColor="@color/purple_700" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Carfax Android</string>
+    <string name="button_dealer">Call Dealer</string>
+    <string name="sys_error_text">System error! Check your Main Code!</string>
+    <string name="data_error_text">Couldn\'t retrieve any data. Check your data path!</string>
+    <string name="textView_vehicle_info">Vehicle Info</string>
+    <string name="textView_location">Location</string>
+    <string name="textView_exterior_color">Exterior Color</string>
+    <string name="textView_interior_color">Interior Color</string>
+    <string name="textView_drive_type">Drive Type</string>
+    <string name="textView_transmission">Transmission</string>
+    <string name="textView_body_style">Body Style</string>
+    <string name="textView_engine">Engine</string>
+    <string name="textView_fuel">Fuel</string>
+</resources>

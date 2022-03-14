@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.CarDetailsActivity">
+
+    <ImageView
+        android:id="@+id/details_car_image"
+        style="@style/imageStyle"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/details_car_name"
+        style="@style/detailsScreenStyle"
+         />
+
+    <TextView
+        android:id="@+id/details_car_price_mileage"
+        style="@style/detailsScreenStyle"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        style="@style/baseDividerStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_car_price_mileage" />
+
+    <TextView
+        style="@style/detailsScreenStyle"
+        android:text="@string/textView_vehicle_info"
+        android:textSize="16sp" />
+
+    <GridLayout
+        android:id="@+id/details_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:columnCount="2"
+        android:rowCount="8">
+
+        <TextView
+            style="@style/detailsScreenGridNonHighlight"
+            android:text="@string/textView_location" />
+
+        <TextView
+            android:id="@+id/details_car_location"
+            style="@style/detailsScreenGridHighlight"
+             />
+
+        <TextView
+            style="@style/detailsScreenGridNonHighlight"
+            android:text="@string/textView_exterior_color" />
+
+        <TextView
+            style="@style/detailsScreenGridHighlight"
+            android:id="@+id/details_ext_color" />
+
+        <TextView
+            style="@style/detailsScreenGridNonHighlight"
+            android:text="@string/textView_interior_color" />
+
+        <TextView
+            style="@style/detailsScreenGridHighlight"
+            android:id="@+id/details_int_color" />
+
+        <TextView
+
+            style="@style/detailsScreenGridNonHighlight"
+            android:text="@string/textView_drive_type" />
+
+        <TextView
+            style="@style/detailsScreenGridHighlight"
+            android:id="@+id/details_drive_type" />
+
+        <TextView
+            style="@style/detailsScreenGridNonHighlight"
+            android:text="@string/textView_transmission" />
+
+        <TextView
+            style="@style/detailsScreenGridHighlight"
+            android:id="@+id/details_transmission" />
+
+        <TextView
+
+            style="@style/detailsScreenGridNonHighlight"
+            android:text="@string/textView_body_style" />
+
+        <TextView
+            style="@style/detailsScreenGridHighlight"
+            android:id="@+id/details_body_style" />
+
+        <TextView
+            style="@style/detailsScreenGridNonHighlight"
+            android:text="@string/textView_engine" />
+
+        <TextView
+            style="@style/detailsScreenGridHighlight"
+            android:id="@+id/details_engine" />
+
+        <TextView
+            style="@style/detailsScreenGridNonHighlight"
+            android:text="@string/textView_fuel" />
+
+        <TextView
+            style="@style/detailsScreenGridHighlight"
+            android:id="@+id/details_fuel" />
+
+    </GridLayout>
+
+    <LinearLayout
+        style="@style/baseDividerStyle"
+        android:layout_height="3dp"
+        android:layout_marginBottom="32dp"
+        android:alpha="0.9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_grid" />
+
+    <Button
+        android:id="@+id/details_button_call_dealer"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
